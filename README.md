@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/2786e392-b3a6-4feb-be5e-939d01e55243)
+
+
+
 ## 1. Start Vagrant
 Before running the Ansible playbooks, you need to start the Vagrant environment. You can do this by navigating to your Vagrant project directory in your terminal and using the following command:
 ```
