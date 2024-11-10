@@ -1,0 +1,23 @@
+---
+- name: Install and configure MySQL server
+  hosts: dbserver
+  remote_user: root
+  become: true  # Use become to run tasks with elevated privileges
+
+  tasks:
+    - name: Install MySQL repository
+      yum:
+        name: https://repo.mysql.com//mysql57-community-release-el7-11.noarch.rpm  # Adjust version as needed
+        state: present
+
+    - name: Install mysql
+      yum:
+        name: mysql-server
+        state: present
+
+
+    - name: Restart mysql
+      service:
+        name: mysqld
+        state: started
+        enabled: yes
