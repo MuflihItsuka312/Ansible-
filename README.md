@@ -1,11 +1,11 @@
-##1. Start Vagrant
+## 1. Start Vagrant
 Before running the Ansible playbooks, you need to start the Vagrant environment. You can do this by navigating to your Vagrant project directory in your terminal and using the following command:
 ```
 vagrant up
 ```
 This command will start the virtual machines defined in your Vagrantfile.
 
-##2. Configure Inventory
+## 2. Configure Inventory
 You have the following inventory configuration:
 
 ```
@@ -17,7 +17,7 @@ You have the following inventory configuration:
 ```
 
 Make sure this is saved in a file named inventory.ini (or similar) and specify this inventory file when running your Ansible playbooks. 
-##3 execute playbook in order to deploy service 
+## 3 execute playbook in order to deploy service 
 
 ```
 ansible-playbook -i inventory playbooksql.yml //for mysql server
